@@ -14,23 +14,27 @@
 		url("./assets/fonts/IBMPlexSerif-Regular.tff") format('truetype');
 }
 @font-face {
+	font-family: "Muli Regular";
+	src:url("./assets/fonts/Muli-Regular.woff") format('woff'),
+		url("./assets/fonts/Muli-Regular.tff") format('truetype');
+}
+@font-face {
 	font-family: "Muli Light";
 	src:url("./assets/fonts/Muli-Light.woff") format('woff'),
 		url("./assets/fonts/Muli-Light.tff") format('truetype');
 }
-
-a{
-	color: #4A90E2;
-	text-decoration: none;
+@font-face {
+	font-family: "Muli ExtraLight";
+	src:url("./assets/fonts/Muli-ExtraLight.woff") format('woff'),
+		url("./assets/fonts/Muli-ExtraLight.tff") format('truetype');
 }
 
 h1, h3{
 	font-family: "IBM Plex Mono Semibold";
+	font-weight: normal;
 }
 h2{
-	font-family: "IBM Plex Serif";
-	margin: auto;
-	font-size: 36px;
+	font-weight: normal;
 }
 h3 {
 	font-size: 0.8em;
@@ -38,12 +42,18 @@ h3 {
 body{
 	font-family: "Muli Light";
 	background-color: #F8F8F8;
-	color: #4A4A4A;
+	color: #000000;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+a{
+	color: #4A90E2;
+	text-decoration: none;
 }
 
 .meta{
-	font-family: "Muli Light";
-	color: #9B9B9B;
+	font-family: "Muli Regular";
+	color: #4A4A4A;
 	text-decoration: none;
 	font-size: 16px;
 }
@@ -60,17 +70,14 @@ body{
 	margin: 0;
 	width: calc(100% - 300px);
 	background-color: #F8F8F8;
-	border-style: dashed;
 	font-size: 24px;
 }
-
 .header .name{
 	float: left;
 }
 .header .about{
 	float: right;
 }
-
 .spacer {
 	width: 100%;
 	height: 162px; 
@@ -80,8 +87,10 @@ body{
 
 .greeting {
 	text-align: center;	
-	margin-top: 55px;
-	border-style: dotted;
+	padding-top: 55px;
+	font-family: "IBM Plex Serif";
+	margin: auto;
+	font-size: 36px;
 }
 
 .contact {
@@ -91,32 +100,79 @@ body{
 }
 
 
-
-
 .projects{
-	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
 	justify-content: center;
-	width: calc(100% - 300px);
-	margin-left: 150px;
-	margin-right: 150px;
+	width: 100%;
 	margin-top: 100px;
-	border-style: solid;
 }
-
 .projects .row{
 	min-width: 0;
 	min-height: 0;
 	display: flex;
 
 }
-
 .projects .row .column{
 	flex: 1 1 100%;
 	margin: 1%;
 }
+.projects .row .column .project_title{
+	flex: 1 1 100%;
+	margin: 1%;
+	font-family: "IBM Plex Serif";
+	font-size: 24px;
+}
+.projects .row .column .project_description{
+	flex: 1 1 100%;
+	margin: 1%;
+	font-family: "Muli ExtraLight";
+	font-size: 16px;
+	color: #4A4A4A;
+}
 .projects .row .column img{
 	width: 100%;
 	height: auto;
+}
+
+.author{
+	display: flex;
+	margin-top: 235px;
+}
+.author .author_bio{
+	flex: 3;
+	flex-direction: column;
+}
+.author .author_bio .author_bio_title {
+	font-family: "IBM Plex Mono Semibold";
+	flex-direction: column;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 95px;
+}
+.author .voyage{
+	flex: 2;
+	flex-direction: column;
+}
+.author .voyage .title{
+	font-family: "IBM Plex Serif";
+	font-size: 36px;
+	color: #4A4A4A;
+	margin-bottom: 80px;
+}
+.author .voyage p{
+	font-family: "Muli Regular";
+	font-size: 16px;
+	color: #000000;
+}
+.author .social{
+	justify-content: flex-start;
+}
+.author .voyage .byline{
+	font-family: "Muli ExtraLight";
+	font-size: 12px;
+	color: #9B9B9B;
+	margin-top: 20px;
 }
 
 
