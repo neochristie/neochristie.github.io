@@ -1,38 +1,20 @@
-@font-face {
-	font-family: "IBM Plex Mono Semibold";
-	src:url("./assets/fonts/IBMPlexMono-SemiBold.woff") format('woff'),
-		url("./assets/fonts/IBMPlexMono-SemiBold.tff") format('truetype');
-}
-@font-face {
-	font-family: "IBM Plex Mono";
-	src:url("./assets/fonts/IBMPlexMono-Regular.woff") format('woff'),
-		url("./assets/fonts/IBMPlexMono-Regular.tff") format('truetype');
-}
-@font-face {
-	font-family: "IBM Plex Serif";
-	src:url("./assets/fonts/IBMPlexSerif-Regular.woff") format('woff'),
-		url("./assets/fonts/IBMPlexSerif-Regular.tff") format('truetype');
-}
-@font-face {
-	font-family: "Muli Regular";
-	src:url("./assets/fonts/Muli-Regular.woff") format('woff'),
-		url("./assets/fonts/Muli-Regular.tff") format('truetype');
-}
-@font-face {
-	font-family: "Muli Light";
-	src:url("./assets/fonts/Muli-Light.woff") format('woff'),
-		url("./assets/fonts/Muli-Light.tff") format('truetype');
-}
-@font-face {
-	font-family: "Muli ExtraLight";
-	src:url("./assets/fonts/Muli-ExtraLight.woff") format('woff'),
-		url("./assets/fonts/Muli-ExtraLight.tff") format('truetype');
+/* FONT STYLES
+
+Regular:400; Semibold:600
+font-family: 'IBM Plex Mono', monospace;
+
+Regular:400
+font-family: 'IBM Plex Serif', serif;
+
+Regular: 400; Light:300; Extra-Light: 200
+font-family: 'Muli', sans-serif;
+
+*/
+h1, h3{
+	font-family: 'IBM Plex Mono';
+	font-weight: 600;
 }
 
-h1, h3{
-	font-family: "IBM Plex Mono Semibold";
-	font-weight: normal;
-}
 h2{
 	font-weight: normal;
 }
@@ -40,7 +22,7 @@ h3 {
 	font-size: 0.8em;
 }
 body{
-	font-family: "Muli Light";
+
 	background-color: #F8F8F8;
 	color: #000000;
 	margin-left: 150px;
@@ -52,7 +34,8 @@ a{
 }
 
 .meta{
-	font-family: "Muli Regular";
+	font-family: 'Muli';
+	font-weight: 400;
 	color: #4A4A4A;
 	text-decoration: none;
 	font-size: 16px;
@@ -72,6 +55,7 @@ a{
 	background-color: #F8F8F8;
 	font-size: 24px;
 }
+
 .header .name{
 	float: left;
 }
@@ -88,7 +72,7 @@ a{
 .greeting {
 	text-align: center;	
 	padding-top: 55px;
-	font-family: "IBM Plex Serif";
+	font-family: 'IBM Plex Serif';
 	margin: auto;
 	font-size: 36px;
 }
@@ -120,13 +104,14 @@ a{
 .projects .row .column .project_title{
 	flex: 1 1 100%;
 	margin: 1%;
-	font-family: "IBM Plex Serif";
+	font-family: 'IBM Plex Serif';
 	font-size: 24px;
 }
 .projects .row .column .project_description{
 	flex: 1 1 100%;
 	margin: 1%;
-	font-family: "Muli ExtraLight";
+	font-family: "Muli";
+	font-weight: 200;
 	font-size: 16px;
 	color: #4A4A4A;
 }
@@ -144,14 +129,16 @@ a{
 	min-height: 0;
 	flex: 3;
 	flex-direction: column;
-	margin: 10px;
+	margin-right: 100px;
+
 }
 .author .author_bio img{
 	width: 100%;
 	height: auto;
 }
 .author .author_bio .author_bio_title {
-	font-family: "IBM Plex Mono Semibold";
+	font-family: 'IBM Plex Mono';
+	font-weight: 600;
 	flex-direction: column;
 	font-size: 24px;
 	color: #000000;
@@ -163,13 +150,14 @@ a{
 	margin: 10px;
 }
 .author .voyage .title{
-	font-family: "IBM Plex Serif";
+	font-family: 'IBM Plex Serif';
 	font-size: 36px;
 	color: #4A4A4A;
 	margin-bottom: 80px;
 }
 .author .voyage p{
-	font-family: "Muli Regular";
+	font-family: 'Muli';
+	font-weight: 400;
 	font-size: 16px;
 	color: #000000;
 }
@@ -177,7 +165,8 @@ a{
 	justify-content: flex-start;
 }
 .author .voyage .byline{
-	font-family: "Muli ExtraLight";
+	font-family: 'Muli';
+	font-weight: 200;
 	font-size: 12px;
 	color: #9B9B9B;
 	margin-top: 20px;
