@@ -13,6 +13,7 @@ font-family: 'Muli', sans-serif;
 h1, h3{
 	font-family: 'IBM Plex Mono';
 	font-weight: 600;
+	margin: 0;
 }
 
 h2{
@@ -22,11 +23,9 @@ h3 {
 	font-size: 0.8em;
 }
 body{
-
+	margin: 0;
 	background-color: #F8F8F8;
 	color: #000000;
-	margin-left: 150px;
-	margin-right: 150px;
 }
 a{
 	color: #4A90E2;
@@ -47,7 +46,6 @@ a{
 	z-index: 999;
 	position: fixed;
 	padding-top: 60px;
-	padding-bottom: 10px;
 	padding-left: 150px;
 	padding-right: 150px;
 	margin: 0;
@@ -60,6 +58,7 @@ a{
 	border-bottom-style: solid;
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 0;
 }
 .header .wrapper .name{
 	float: left;
@@ -73,111 +72,50 @@ a{
 
 }
 
+.brief{
+	margin-left: 150px;
+	margin-right: 150px;
+	display:flex;
+}
 
-.greeting {
-	text-align: center;	
-	padding-top: 55px;
+.brief .info{
+	flex-direction: column;
+	flex:1;
+	margin-left: 0;
+}
+.brief .info .block{
+	flex: 1;
+	margin-top: 10px;
+	margin-bottom: 45px;
+}
+.brief .info .block .label{
 	font-family: 'IBM Plex Serif';
-	margin: auto;
-	font-size: 36px;
+	font-size: 10px;
+	color: #4A4A4A
 }
-
-.contact {
-	text-align: center;
-	margin-top: 40px;
-	font-size: 16px;
-}
-
-
-.projects{
-	flex-direction: column;
-	flex: 1 1 100%;
-	justify-content: center;
-	width: 100%;
-	margin-top: 100px;
-}
-.projects .row{
-	min-width: 0;
-	min-height: 0;
-	display: flex;
-
-}
-.projects .row .column{
-	flex: 1 1 100%;
-	margin: 1%;
-}
-.projects .row .column .project_title{
-	flex: 1 1 100%;
-	margin: 1%;
-	font-family: 'IBM Plex Serif';
-	font-size: 24px;
-}
-.projects .row .column .project_description{
-	flex: 1 1 100%;
-	margin: 1%;
-	font-family: "Muli";
-	font-weight: 200;
-	font-size: 16px;
-	color: #4A4A4A;
-}
-.projects .row .column img{
-	width: 100%;
-	height: auto;
-}
-
-.author{
-	display: flex;
-	margin-top: 235px;
-}
-.author .author_bio{
-	min-width: 0;
-	min-height: 0;
-	flex: 3;
-	flex-direction: column;
-	margin-right: 100px;
-
-}
-.author .author_bio img{
-	width: 100%;
-	height: auto;
-}
-.author .author_bio .author_bio_title {
-	font-family: 'IBM Plex Mono';
-	font-weight: 600;
-	flex-direction: column;
-	font-size: 24px;
-	color: #000000;
-	margin-bottom: 95px;
-}
-.author .voyage{
-	flex: 2;
-	flex-direction: column;
-	margin: 10px;
-}
-.author .voyage .title{
-	font-family: 'IBM Plex Serif';
-	font-size: 36px;
-	color: #4A4A4A;
-	margin-bottom: 80px;
-}
-.author .voyage p{
+.brief .info .block .text{
 	font-family: 'Muli';
 	font-weight: 400;
+	color: #4A4A4A;
 	font-size: 16px;
+}
+
+.brief .description{
+	flex: 2;
+	flex-direction: column;
+}
+.brief .description .slogan{
+	flex: 1;	
+	font-family: 'IBM Plex Mono';
+	font-weight: 600;
 	color: #000000;
 }
-.author .social{
-	justify-content: flex-start;
+.brief .description .proposal{
+	flex: 1;
+	font-family: 'IBM Plex Serif';
+	font-size: 24px;
+	margin-right: 175px;
 }
-.author .voyage .byline{
-	font-family: 'Muli';
-	font-weight: 200;
-	font-size: 12px;
-	color: #9B9B9B;
-	margin-top: 20px;
-}
-
-
 
 .clearfix::after {
     content: "";
