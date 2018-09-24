@@ -249,7 +249,6 @@ ol{
 	height: 625px;
 	justify-content: center;
 	align-items: center;
-	border-style: solid;
 }
 
 .clearfix::after {
