@@ -14,6 +14,7 @@ h1, h3{
 	font-family: 'IBM Plex Mono';
 	font-weight: 600;
 	margin: 0;
+	padding-bottom: 
 }
 
 h2{
@@ -73,6 +74,7 @@ ol{
 	font-size: 24px;
 }
 .header .wrapper{
+	border-width: thin;
 	border-bottom-style: solid;
 	display: inline-block;
 	width: 100%;
