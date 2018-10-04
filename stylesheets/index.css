@@ -95,17 +95,53 @@ a{
 	min-width: 0;
 	min-height: 0;
 	display: flex;
+	justify-content: center;
 
 }
 .projects .row .column{
 	flex: 1 1 100%;
-	margin: 1%;
+	max-width: 50%;
+	margin:1%;
 }
+
+
+.container{
+	flex: 1 1 100%;
+	min-width: 0;
+	min-height: 0;
+	max-height: 450px;
+	overflow: hidden;
+	padding-bottom: -20px;
+}
+.zoom{
+	margin: 0;
+	padding: 0;
+	flex:calc(600/400);
+}
+.zoom img{
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+    -ms-transition:transform  0.5s ease; /* IE 9 */
+    -webkit-transition: transform 0.5s ease; /* Safari 3-8 */
+    transition: transform 0.5s ease; 
+}
+
+.container:hover .zoom img{
+	-ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+}
+
+
+
 .projects .row .column .project_title{
 	flex: 1 1 100%;
 	margin: 1%;
 	font-family: 'IBM Plex Serif';
 	font-size: 24px;
+	color: #000000;
 }
 .projects .row .column .project_description{
 	flex: 1 1 100%;
