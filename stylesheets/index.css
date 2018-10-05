@@ -123,15 +123,15 @@ a{
 	max-height: 100%;
 	margin: 0;
 	padding: 0;
-    -ms-transition:transform  0.5s ease; /* IE 9 */
-    -webkit-transition: transform 0.5s ease; /* Safari 3-8 */
-    transition: transform 0.5s ease; 
+    -ms-transition:transform  0.35s ease; /* IE 9 */
+    -webkit-transition: transform 0.35s ease; /* Safari 3-8 */
+    transition: transform 0.35s ease; 
 }
 
 .container:hover .zoom img{
-	-ms-transform: scale(1.15); /* IE 9 */
-    -webkit-transform: scale(1.15); /* Safari 3-8 */
-    transform: scale(1.15); 
+	-ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 
 
@@ -140,7 +140,7 @@ a{
 	flex: 1 1 100%;
 	margin: 1%;
 	font-family: 'IBM Plex Serif';
-	font-size: 24px;
+	font-size: 20px;
 	color: #000000;
 }
 .projects .row .column .project_description{
@@ -148,7 +148,7 @@ a{
 	margin: 1%;
 	font-family: "Muli";
 	font-weight: 200;
-	font-size: 16px;
+	font-size: 14px;
 	color: #4A4A4A;
 }
 .projects .row .column img{
