@@ -236,11 +236,7 @@ a{
 	margin-top: 20px;
 }
 
-.not_active {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-}
+
 
 .clearfix::after {
     content: "";
