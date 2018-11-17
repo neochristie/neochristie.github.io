@@ -38,6 +38,9 @@ ol{
 	text-decoration: none;
 	font-size: 16px;
 }
+a.meta:hover{
+	color: #707070;
+}
 .caption{
 	margin-top: 20px; 
 	font-family: 'Muli';
@@ -211,7 +214,9 @@ ol{
 	font-size: 18px;
 	color: #9B9B9B;
 }
-
+.footer .links a:hover{
+	color: #4A90E2;
+}
 .footer .social{
 	margin-top: 100px;
 	width: 125px;
