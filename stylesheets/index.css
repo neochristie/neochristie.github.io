@@ -198,6 +198,8 @@ a.meta:hover{
 	min-height: 0;
 	flex: 1;
 	margin-right: 25px;
+	overflow: hidden;
+	flex-grow: 1;
 }
 .author .content .portrait img{
 	width: 100%;
@@ -207,41 +209,63 @@ a.meta:hover{
 	width: 100%;
 	flex: 1;
 	flex-direction: column;
+	flex-grow: 2;
 }
 
-.author .content .voyage .about_me {
-	margin-top: 0px;
-	margin-left: 85px;
-	margin-bottom: 20px;
-	font-family: 'IBM Plex Mono';
+.author .content .voyage .greeting{
+	display:flex;
+	padding-top: 0px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	font-family: 'IBM Plex Serif';
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 36px;
 	color: #000000;
 	flex: 1;
 }
-.author .content .voyage p{
+.author .content .voyage .info{
+	display:flex;
+	flex-direction: row;
+}
+
+.author .content .voyage .info .blurb{
 	flex:1;
-	margin-top: 0;
-	margin-bottom: 15px;
-	margin-left: 85px;
-	margin-right: 30px;
+	padding-top: 0;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	font-family: 'Muli';
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+}
+.author .content .voyage .info .credentials{
+	flex:1;
+	flex-direction: column;
+	padding-top: 0;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 15px;
 	font-family: 'Muli';
 	font-weight: 400;
 	font-size: 16px;
 	color: #000000;
 }
 
-.author .content .voyage .social{
+.credits{
+	margin-top: 75px;
+	display: flex;
+	justify-content: space-between;
+}
+.credits .social{
 	justify-content: flex-start;
 	margin-left: 85px;
 }
-.author .content .voyage .byline{
+.credits .byline{
 	margin-left: 85px;
 	font-family: 'Muli';
 	font-weight: 200;
 	font-size: 12px;
 	color: #9B9B9B;
-	margin-top: 20px;
 }
 
 
