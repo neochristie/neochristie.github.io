@@ -253,6 +253,7 @@ a.meta:hover{
 
 .credits{
 	margin-top: 75px;
+	padding-bottom: 23px;
 	display: flex;
 	justify-content: space-between;
 }

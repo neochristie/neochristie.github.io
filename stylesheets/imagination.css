@@ -222,7 +222,7 @@ a.meta:hover{
 .credits{
 	width: calc(100% - 300px);
 	margin-top: 75px;
-	padding-bottom: 7px;
+	padding-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 }
