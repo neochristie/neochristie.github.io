@@ -204,12 +204,14 @@ a.meta:hover{
 	width: 60%;
 }
 .footer .links{
+	margin-top: 55px;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;
 }
 .footer .links a{
-	margin-top: 55px;
+	margin-top: 10px;
 	font-family: 'IBM Plex Serif';
 	font-size: 18px;
 	color: #9B9B9B;
@@ -217,26 +219,23 @@ a.meta:hover{
 .footer .links a:hover{
 	color: #4A90E2;
 }
-.footer .social{
-	margin-top: 100px;
-	width: 125px;
+.credits{
+	width: calc(100% - 300px);
+	margin-top: 75px;
+	padding-bottom: 7px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
-
-.footer .byline{
-	display:flex ;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 20px;
-	margin-bottom: 85px;
+.credits .social{
+	display: flex;
+}
+.credits .byline{
 	font-family: 'Muli';
 	font-weight: 200;
 	font-size: 12px;
 	color: #9B9B9B;
-	width: 100%;
 }
+
 
 .not_active {
   pointer-events: none;

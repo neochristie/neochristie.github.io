@@ -257,11 +257,9 @@ a.meta:hover{
 	justify-content: space-between;
 }
 .credits .social{
-	justify-content: flex-start;
-	margin-left: 85px;
+	display: flex;
 }
 .credits .byline{
-	margin-left: 85px;
 	font-family: 'Muli';
 	font-weight: 200;
 	font-size: 12px;
