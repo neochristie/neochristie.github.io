@@ -10,6 +10,86 @@
 </head>
 
 <body>
+	<script>
+		// Open the Modal
+		function openModal() {
+		  document.getElementById('myModal').style.display = "flex";
+		}
+
+		// Close the Modal
+		function closeModal() {
+		  document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("gallery");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
+
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+	    <div class="mySlides">
+	      <div class="numbertext">1 / 4</div>
+	      <img src="assets/images/portfolio-project-aggie-1.png" class="gallery" style="width:100%" alt="01     Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">2 / 4</div>
+	      <img src="assets/images/portfolio-project-aggie-2.jpg" class="gallery" style="width:100%" alt="02     2017-18 weekly production schedule at The Aggie
+">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">3 / 4</div>
+	      <img src="assets/images/portfolio-project-aggie-3.png" class="gallery" style="width:100%" alt="03     Revised 2017-18 graphics assignments spreadsheet
+">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">4 / 4</div>
+	      <img src="assets/images/portfolio-project-aggie-4.png" class="gallery" style="width:100%" alt="04     Updated design team folder system in Google Drive 
+">
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <p id="caption"></p>
+	    </div>
+
+	  </div>
+	</div>
 
 	<div class="header">
 		<div class="wrapper">
@@ -142,7 +222,10 @@
 				</span>
 			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-1.png" alt="Spreadhseets">
+			<img src="./assets/images/portfolio-project-aggie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Spreadhseets">
+			<p class="caption">
+				01     Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet
+			</p>
 			<br>
 		</div>
 	</div>
@@ -164,11 +247,20 @@
 			<p>
 				Mondays became the final deadline for editors to input photo and graphic assignments, and frequent communication between all teams about any changes or late assignments helped tremendously in keeping things running smoothly. The reorganized graphics folder also helped the Media team find everything they needed in a single folder.
 			</p>
-			<img src="./assets/images/portfolio-project-aggie-2.jpg" alt="New Production Schedule">
+			<img src="./assets/images/portfolio-project-aggie-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="New Production Schedule">
+			<p class="caption">
+				02     2017-18 weekly production schedule at The Aggie
+			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-3.png" alt="Graphics Spreadsheet Comparison">
+			<img src="./assets/images/portfolio-project-aggie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Graphics Spreadsheet Comparison">
+			<p class="caption">
+				03     Revised 2017-18 graphics assignments spreadsheet
+			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-4.png" alt="Graphics Folder Flowchart">
+			<img src="./assets/images/portfolio-project-aggie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Graphics Folder Flowchart">
+			<p class="caption">
+				04     Updated design team folder system in Google Drive 
+			</p>
 			<br>
 			<p>
 				<span>
@@ -211,17 +303,17 @@
 	</div>
 </body>
 <div class="credits">
-		<div class="byline">
-			© 2019 Christie Neo <br>
-			Website designed by Christie Neo, developed by <a href="https://www.linkedin.com/in/wang-l-albert/" style="color: #9B9B9B;" target="_blank">Albert Wang</a>
-		</div>
-		<div class="social">
-			<a href="https://www.linkedin.com/in/neochristie/" style="margin-right: 15px">
-				<img src="./assets/images/linkedinicon.png" target="_blank" alt="Christie Neo">
-			</a>
-			<a href="https://www.facebook.com/neochristie">
-				<img src="./assets/images/facebookicon.png" target="_blank" alt="Christie Neo">
-			</a>
-		</div>
+	<div class="byline">
+		© 2019 Christie Neo <br>
+		Website designed by Christie Neo, developed by <a href="https://www.linkedin.com/in/wang-l-albert/" style="color: #9B9B9B;" target="_blank">Albert Wang</a>
 	</div>
+	<div class="social">
+		<a href="https://www.linkedin.com/in/neochristie/" style="margin-right: 15px">
+			<img src="./assets/images/linkedinicon.png" target="_blank" alt="Christie Neo">
+		</a>
+		<a href="https://www.facebook.com/neochristie">
+			<img src="./assets/images/facebookicon.png" target="_blank" alt="Christie Neo">
+		</a>
+	</div>
+</div>
 </html>
