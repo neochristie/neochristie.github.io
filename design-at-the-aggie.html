@@ -11,6 +11,7 @@
 
 <body>
 	<script>
+		
 		// Open the Modal
 		function openModal() {
 		  document.getElementById('myModal').style.display = "flex";
@@ -19,6 +20,13 @@
 		// Close the Modal
 		function closeModal() {
 		  document.getElementById('myModal').style.display = "none";
+		}
+
+		function myFunction(event) {
+		  var x = event.which || event.keyCode;
+		  if (x == 27){
+		  	closeModal();
+		  }
 		}
 
 		var slideIndex = 1;
@@ -56,27 +64,29 @@
 	  <span class="close cursor" onclick="closeModal()">&times;</span>
 	  <div class="modal-content">
 
-	    <div class="mySlides">
-	      <div class="numbertext">1 / 4</div>
-	      <img src="assets/images/portfolio-project-aggie-1.png" class="gallery" style="width:100%" alt="01     Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet">
+		<div class="mySlides">
+	      <div class="numbertext">1 / 5</div>
+	      <img src="assets/images/portfolio-project-aggie-0.jpg" class="gallery" style="width:100%" alt="01: Team structure within The California Aggie">
 	    </div>
 
 	    <div class="mySlides">
-	      <div class="numbertext">2 / 4</div>
-	      <img src="assets/images/portfolio-project-aggie-2.jpg" class="gallery" style="width:100%" alt="02     2017-18 weekly production schedule at The Aggie
-">
+	      <div class="numbertext">2 / 5</div>
+	      <img src="assets/images/portfolio-project-aggie-1.png" class="gallery" style="width:100%" alt="02: Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet">
 	    </div>
 
 	    <div class="mySlides">
-	      <div class="numbertext">3 / 4</div>
-	      <img src="assets/images/portfolio-project-aggie-3.png" class="gallery" style="width:100%" alt="03     Revised 2017-18 graphics assignments spreadsheet
-">
+	      <div class="numbertext">3 / 5</div>
+	      <img src="assets/images/portfolio-project-aggie-2.jpg" class="gallery" style="width:100%" alt="03: 2017-18 weekly production schedule at The Aggie">
 	    </div>
 
 	    <div class="mySlides">
-	      <div class="numbertext">4 / 4</div>
-	      <img src="assets/images/portfolio-project-aggie-4.png" class="gallery" style="width:100%" alt="04     Updated design team folder system in Google Drive 
-">
+	      <div class="numbertext">4 / 5</div>
+	      <img src="assets/images/portfolio-project-aggie-3.png" class="gallery" style="width:100%" alt="04: Revised 2017-18 graphics assignments spreadsheet">
+	    </div>
+
+	    <div class="mySlides">
+	      <div class="numbertext">5 / 5</div>
+	      <img src="assets/images/portfolio-project-aggie-4.png" class="gallery" style="width:100%" alt="05: Updated design team folder system in Google Drive">
 	    </div>
 
 	    <!-- Next/previous controls -->
@@ -181,6 +191,10 @@
 				</span>
 				 
 			</p>
+			<img src="./assets/images/portfolio-project-aggie-0.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Spreadhseets">
+			<p class="caption">
+				01: Team structure within The California Aggie
+			</p>
 		</div>
 	</div>
 	<div class="section">
@@ -222,9 +236,9 @@
 				</span>
 			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Spreadhseets">
+			<img src="./assets/images/portfolio-project-aggie-1.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Spreadsheets">
 			<p class="caption">
-				01     Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet
+				02: Evaluating the 2016-17 graphics assignments spreadsheet and photo assignments spreadsheet
 			</p>
 			<br>
 		</div>
@@ -247,19 +261,19 @@
 			<p>
 				Mondays became the final deadline for editors to input photo and graphic assignments, and frequent communication between all teams about any changes or late assignments helped tremendously in keeping things running smoothly. The reorganized graphics folder also helped the Media team find everything they needed in a single folder.
 			</p>
-			<img src="./assets/images/portfolio-project-aggie-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="New Production Schedule">
+			<img src="./assets/images/portfolio-project-aggie-2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="New Production Schedule">
 			<p class="caption">
-				02     2017-18 weekly production schedule at The Aggie
+				03: 2017-18 weekly production schedule at The Aggie
 			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Graphics Spreadsheet Comparison">
+			<img src="./assets/images/portfolio-project-aggie-3.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Graphics Spreadsheet Comparison">
 			<p class="caption">
-				03     Revised 2017-18 graphics assignments spreadsheet
+				04: Revised 2017-18 graphics assignments spreadsheet
 			</p>
 			<br>
-			<img src="./assets/images/portfolio-project-aggie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Graphics Folder Flowchart">
+			<img src="./assets/images/portfolio-project-aggie-4.png" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Graphics Folder Flowchart">
 			<p class="caption">
-				04     Updated design team folder system in Google Drive 
+				05: Updated design team folder system in Google Drive 
 			</p>
 			<br>
 			<p>
