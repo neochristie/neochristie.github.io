@@ -263,7 +263,8 @@ a.meta:hover{
 	display: flex;
 	justify-content: space-between;
 	border-top-style: solid;
-	border-color: #4A4A4A;
+	border-color: #9B9B9B;
+	border-width: thin;
 }
 .credits .social{
 	display: flex;
