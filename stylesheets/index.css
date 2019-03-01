@@ -170,7 +170,7 @@ a.meta:hover{
 		position: absolute;
 		bottom: 2px;
 		left: 0; right: 0;
-		height: 2px;
+		height: 2px; 
 		background-color: #73A9E8;
 		opacity: 0;
 		transform: translateY(8px/2);
