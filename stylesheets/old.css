@@ -36,7 +36,7 @@ ol{
 	font-weight: 400;
 	color: #4A4A4A;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 14px;
 }
 a.meta:hover{
 	color: #707070;
@@ -55,11 +55,11 @@ a.meta:hover{
 	top: 0;
 	left: 0;
 	padding-top: 20px;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 80px;
+	padding-right: 80px;
 	padding-bottom: -10px;
 	margin-bottom: -10px;
-	width: calc(100% - 300px);
+	width: calc(100% - 160px);
 	background-color: white;
 	font-size: 20px;
 	font-family: 'IBM Plex Mono';
@@ -88,8 +88,8 @@ a.meta:hover{
 }
 
 .brief{
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
 	display:flex;
 }
 .brief .info{
@@ -173,8 +173,8 @@ a.meta:hover{
 }
 
 .image_wrapper{
-	margin-left: 150px; 
-	margin-right: 150px;
+	margin-left: 80px; 
+	margin-right: 80px;
 	min-width: 0;
 	min-height: 0;
 }
@@ -218,14 +218,14 @@ a.meta:hover{
 	color: #4A90E2;
 }
 .credits{
-	width: calc(100% - 300px);
+	width: calc(100% - 160px);
 	margin-top: 75px;
 	padding-top: 20px;
 	padding-bottom: 30px;
-	margin-left: -150px;
-	margin-right: -150px;
-	padding-left: 150px;
-	padding-right: 150px;
+	margin-left: -80px;
+	margin-right: -80px;
+	padding-left: 80px;
+	padding-right: 80px;
 	display: flex;
 	justify-content: space-between;
 	border-top-style: solid;

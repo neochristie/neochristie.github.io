@@ -25,8 +25,8 @@ body{
 
 	background-color: #F8F8F8;
 	color: #000000;
-	margin-left: 150px;
-	margin-right: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 a{
 	color: #4A90E2;
@@ -38,7 +38,7 @@ a{
 	font-weight: 400;
 	color: #000000;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 14px;
 }
 a.meta:hover{
 	color: #707070;
@@ -51,10 +51,10 @@ a.meta:hover{
 	position: fixed;
 	padding-top: 20px;
 	padding-bottom: 10px;
-	padding-left: calc(150px + 0.75%);
-	padding-right: calc(150px + 0.75%);
+	padding-left: calc(80px + 0.75%);
+	padding-right: calc(80px + 0.75%);
 	margin: 0;
-	width: calc(98.5% - 300px);
+	width: calc(98.5% - 160px);
 	background-color: #F8F8F8;
 	font-size: 20px;
 }
@@ -91,7 +91,7 @@ a.meta:hover{
 	flex: 1 1 100%;
 	justify-content: center;
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 60px;
 }
 .projects .row{
 	min-width: 0;
@@ -172,7 +172,14 @@ a.meta:hover{
 .author{
 	display: flex;
 	flex-direction: column;
-	margin-top: 235px;
+	margin-top: 90px;
+	padding-top: 90px;
+	padding-bottom: 160px;
+	margin-left: -80px;
+	margin-right: -80px;
+	padding-left: 80px;
+	padding-right: 80px;
+	background-color: white;
 }
 .author .title_bar{
 	display: flex;
@@ -252,19 +259,19 @@ a.meta:hover{
 }
 
 .credits{
-	margin-top: 75px;
 	padding-top: 20px;
 	padding-bottom: 23px;
-	margin-left: -150px;
-	margin-right: -150px;
-	padding-left: 150px;
-	padding-right: 150px;
+	margin-left: -80px;
+	margin-right: -80px;
+	padding-left: 80px;
+	padding-right: 80px;
 
 	display: flex;
 	justify-content: space-between;
 	border-top-style: solid;
 	border-color: #9B9B9B;
 	border-width: thin;
+	background-color: white;
 }
 .credits .social{
 	display: flex;
